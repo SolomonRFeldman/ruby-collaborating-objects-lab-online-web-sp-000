@@ -18,7 +18,7 @@ class Artist
   end
   
   def find_or_create_by_name(name)
-    @all.
+    @all.any? { |artist| artist.name == name } ? 
   end
   
   def self.all
