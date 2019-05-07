@@ -17,6 +17,10 @@ class Artist
     @@all << self
   end
   
+  def print_songs
+    @songs.each { |song| puts song }
+  end
+  
   def self.find_or_create_by_name(name)
     artist = @@all.index { |artist| artist.name == name }
     artist == nil ? Artist.new(name) : @@all[artist].name
