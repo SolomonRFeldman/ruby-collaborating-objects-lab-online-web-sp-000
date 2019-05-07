@@ -15,7 +15,7 @@ class Song
     song = new
     split_name = filename.split(" - ")
     song.artist = Artist.find_or_create_by_name(split_name.first)
-    song.name = split_name.last.split(".").first
+    song.name = split_name[1]
     song
   end
   
