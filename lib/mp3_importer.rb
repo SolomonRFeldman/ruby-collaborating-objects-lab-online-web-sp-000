@@ -6,7 +6,7 @@ class MP3Importer
   end
   
   def files
-    @files = @path
+    @files = Dir["#{@path}/.rb"]
   end
   
 end
