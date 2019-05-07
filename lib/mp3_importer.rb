@@ -7,7 +7,7 @@ class MP3Importer
   
   def files
     @files = Dir["#{@path}/*.mp3"]
-    @files = @files.collect { |files| files.delete "@path" }
+    @files = @files.collect { |files| files.delete @path }
     puts @files
   end
   
