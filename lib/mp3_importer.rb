@@ -10,4 +10,8 @@ class MP3Importer
     @files = @files.collect { |files| files.split("/").last }
   end
   
+  def import
+    
+  end
+  
 end
