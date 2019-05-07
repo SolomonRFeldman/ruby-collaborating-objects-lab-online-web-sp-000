@@ -17,7 +17,7 @@ class Artist
     @@all << self
   end
   
-  def find_or_create_by_name(name)
+  def self.find_or_create_by_name(name)
     artist = @all.index { |artist| artist.name == name }
     artist == nil ? Artist.new(name) : @@all[artist].name
   end
